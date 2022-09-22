@@ -148,7 +148,7 @@ namespace Anticaptcha_example
                     TaskInfo.Solution.Challenge == null && TaskInfo.Solution.Seccode == null &&
                     TaskInfo.Solution.Validate == null && TaskInfo.Solution.CellNumbers.Count == 0
                     && TaskInfo.Solution.LocalStorage == null && TaskInfo.Solution.Cookies == null
-                    && TaskInfo.Solution.Fingerprint == null)
+                    && TaskInfo.Solution.Fingerprint == null && TaskInfo.Solution.CaptchaId == null)
                 {
                     DebugHelper.Out("Got no 'solution' field from API", DebugHelper.Type.Error);
 
