@@ -46,7 +46,7 @@ namespace Anticaptcha_example.ApiResponse
                             CaptchaId = JsonHelper.ExtractStr(json, "solution", "captcha_id", silent: true),
                             LotNumber = JsonHelper.ExtractStr(json, "solution", "lot_number", silent: true),
                             PassToken = JsonHelper.ExtractStr(json, "solution", "pass_token", silent: true),
-                            GenTime = JsonHelper.ExtractInt(json, "solution", "gen_time", silent: true),
+                            GenTime = JsonHelper.ExtractStr(json, "solution", "gen_time", silent: true),
                             CaptchaOutput = JsonHelper.ExtractStr(json, "solution", "captcha_output", silent: true),
                             Cookies = json["solution"]["cookies"],
                             LocalStorage = json["solution"]["localStorage"],
